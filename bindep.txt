@@ -1,1 +1,6 @@
-
+openssh-clients [platform:rpm]
+sshpass [platform:rpm]
+git [platform:rpm]
+python3.9 [platform:rpm]
+python3.9-pip [platform:rpm]
+python3.9-devel [platform:rpm]
