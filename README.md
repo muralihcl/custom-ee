@@ -1,6 +1,6 @@
 # Create Custom Execution Environment container image for Ascender
 
-To create a container image and include Python 3 is needed. Not many of the base container images have Python3 installed. Whichever base image that needs to be used, check for availability of Python 3 package installed in it. one of the selected container images is from ```quay.io/centos/centos:stream9```.
+To create a container image and include Python 3 is needed. Not many of the base container images have Python3 installed. Whichever base image that needs to be used, check for availability of Python 3 package installed in it. one of the selected container images is from ```quay.io/centos/centos:stream9```. If any other image can be found with this, it can be used as well.
 
 Clone the ```custom-ee``` repository into a folder.
 
@@ -14,6 +14,7 @@ Create a python3 virtual envirionment and install ansible-builder. It would be b
 # python3 -m venv virtualenv
 # source virtualenv/bin/activate
 ( virtualenv ) # pip install --upgrade pip
+( virtualenv ) # pip install setuptools
 ( virtualenv ) # pip install ansible-builder
 ```
 
