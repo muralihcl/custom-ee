@@ -4,7 +4,9 @@ To create a container image and include Python 3 is needed. Not many of the base
 
 Clone the ```custom-ee``` repository into a folder.
 
-```git clone https://github.com/muralihcl/custom-ee.git```
+```bash
+# git clone https://github.com/muralihcl/custom-ee.git
+```
 
 Create a python3 virtual envirionment and install ansible-builder. It would be better if the below steps are executed as root.
 
@@ -22,6 +24,7 @@ Install podman that can be used as a default container runtime
 
 Build the image using ansible-builder. The -v option is to include the verbosity level. -t is to specify the tag.
 ```bash
+( virtualenv ) # cd custom-ee
 ( virtualenv ) # ansible-builder build -v3 -t ghcr.io/ctrliq/custom-ee:latest
 ```
 
